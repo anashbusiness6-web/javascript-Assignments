@@ -1,6 +1,6 @@
 //restourent menu//
 
-let choice = 5;
+let choice = 1;
 let quantity = 2;
 
 let price;

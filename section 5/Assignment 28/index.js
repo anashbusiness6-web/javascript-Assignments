@@ -1,34 +1,31 @@
 //Simple ATM menu//
 
 let choice = 3;
-let balance = 10000;
-let amount = 2000;
+let balance = 5000000;
+let amount = 4000000;
+
 
 switch (choice) {
     case 1:
-        console.log("Current Balance: ₹" + balance);
+        console.log("checkbalance:", balance)
         break;
 
     case 2:
         balance = balance + amount;
-        console.log("Money deposited successfully");
-        console.log("New Balance: ₹" + balance);
+        console.log("amount:", amount);
+        console.log("newbalance:" , balance);
         break;
 
     case 3:
-        if (amount > balance) {
-            console.log("Insufficient balance");
-        } else {
-            balance = balance - amount;
-            console.log("Money withdrawn successfully");
-            console.log("Remaining Balance: ₹" + balance);
+        if (amount <= 0) {
+            console.log("invalid withdraw");
         }
-        break;
-
-    case 4:
-        console.log("Thank you. Goodbye!");
-        break;
-
-    default:
-        console.log("Invalid choice");
+        else if (amount > balance) {
+            console.log("insufficient balance");
+        }
+        else {
+            balance = balance - amount;
+            console.log("withdrawn successfully");
+            console.log("remaining balance:", balance);
+        }
 }

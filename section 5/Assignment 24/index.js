@@ -2,7 +2,7 @@
 //ATM transaction//
 
 let balance = 5000000;
-let withdrawAmount = 90;
+let withdrawAmount = 100;
 
 if(withdrawAmount<=0){
     console.log("invalid withdraw");
@@ -14,4 +14,5 @@ else{
     balance = balance-withdrawAmount;
     console.log("withdraw successfully");
     console.log("remaining balance : ", balance);
+    console.log("withrawAmount:" ,withdrawAmount);
 }

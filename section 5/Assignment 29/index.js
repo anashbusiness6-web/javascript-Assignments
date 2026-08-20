@@ -1,25 +1,28 @@
 //number classification//
 
-let number = 150;
+let number = -99;
 
-if (number > 0) {
-    console.log("Positive");
-} else if (number < 0) {
-    console.log("Negative");
-} else {
-    console.log("Zero");
+if (number>0){
+    console.log("positive");
+}
+else if (number<0){
+    console.log("negative");
+}
+else {
+    console.log("zero");
 }
 
-if (number % 2 === 0) {
-    console.log("Even");
-} else {
-    console.log("Odd");
+if(number%2 ===0){
+    console.log("even");
 }
-
-if (number > 100) {
-    console.log("Greater than 100");
-} else if (number < 100) {
-    console.log("Less than 100");
-} else {
-    console.log("Equal to 100");
+else {
+    console.log("odd");
+}
+if(number>100){
+    console.log("greater than 100");
+}
+else if (number<100){
+    console.log("smaller than 100");
+}else{
+    console.log("equal to 100");
 }

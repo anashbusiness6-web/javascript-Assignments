@@ -3,9 +3,9 @@
 let studentName = "Rahul";
 let rollNumber = 101;
 
-let mathMarks = 85;
+let mathMarks = 32;
 let scienceMarks = 78;
-let englishMarks = 92;
+let englishMarks = 99;
 
 let total = mathMarks + scienceMarks + englishMarks;
 let percentage = (total / 300) * 100;
@@ -28,7 +28,7 @@ if (percentage >= 90) {
 
 let result;
 
-if (mathMarks >= 40 && scienceMarks >= 40 && englishMarks >= 40) {
+if (mathMarks >= 40 || scienceMarks >= 40 || englishMarks >= 40) {
     result = "PASS";
 } else {
     result = "FAIL";
